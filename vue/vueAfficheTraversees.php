@@ -107,9 +107,6 @@
               <?php
               foreach ($categories as $categorie){
                 $placesDispo = $placesCapacite[$traversee['num']][$categorie['idCategorie']];
-                if (isset($placesReservees[$traversee['num']][$categorie['idCategorie']])){
-                  $placesDispo = intval($placesCapacite[$traversee['num']][$categorie['idCategorie']]) - intval($placesReservees[$traversee['num']][$categorie['idCategorie']]);
-                }
 
               ?>
                 <td><?= $placesDispo ?></td>
